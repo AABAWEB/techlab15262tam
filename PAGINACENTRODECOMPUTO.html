@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Cómputo - [Nombre de la I.E.]</title>
+    <!-- Incluye Tailwind CSS para estilos rápidos y responsivos -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Un gris claro para el fondo */
+            color: #374151; /* Color de texto principal */
+        }
+        .section-title {
+            border-left: 4px solid #3b82f6; /* Borde azul para títulos de sección */
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .nav-link {
+            transition: all 0.2s ease-in-out;
+        }
+        .nav-link:hover {
+            color: #2563eb; /* Azul más oscuro al pasar el ratón */
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Encabezado de la página -->
+    <header class="bg-blue-800 text-white p-6 shadow-lg rounded-b-2xl">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-4xl font-extrabold mb-2 md:mb-0">Centro de Cómputo</h1>
+            <p class="text-xl font-light">"[Nombre de tu Institución Educativa]"</p>
+        </div>
+    </header>
+
+    <!-- Barra de navegación principal -->
+    <nav class="bg-white shadow-md py-4 sticky top-0 z-50 rounded-b-xl">
+        <div class="container mx-auto flex flex-wrap justify-center gap-x-6 gap-y-2 text-lg font-medium text-gray-700">
+            <a href="#inicio" class="nav-link px-3 py-1 rounded-md hover:bg-blue-100">Inicio</a>
+            <a href="#mision" class="nav-link px-3 py-1 rounded-md hover:bg-blue-100">Misión y Visión</a>
+            <a href="#servicios" class="nav-link px-3 py-1 rounded-md hover:bg-blue-100">Servicios</a>
+            <a href="#recursos" class="nav-link px-3 py-1 rounded-md hover:bg-blue-100">Recursos</a>
+            <a href="#normas" class="nav-link px-3 py-1 rounded-md hover:bg-blue-100">Normas de Uso</a>
+            <a href="#cronograma" class="nav-link px-3 py-1 rounded-md hover:bg-blue-100">Cronograma</a>
+            <a href="#noticias" class="nav-link px-3 py-1 rounded-md hover:bg-blue-100">Noticias</a>
+            <a href="#galeria" class="nav-link px-3 py-1 rounded-md hover:bg-blue-100">Galería</a>
+            <a href="#descargas" class="nav-link px-3 py-1 rounded-md hover:bg-blue-100">Descargas</a>
+            <a href="#contacto" class="nav-link px-3 py-1 rounded-md hover:bg-blue-100">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- Contenido principal de la página -->
+    <main class="container mx-auto my-8 p-6 bg-white shadow-lg rounded-xl">
+
+        <!-- Sección 1: Inicio / Presentación -->
+        <section id="inicio" class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-700 mb-6 section-title">Inicio / Presentación</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <p class="text-lg leading-relaxed mb-4">
+                        ¡Bienvenido al Centro de Cómputo de nuestra institución! Somos un espacio dedicado a fomentar el aprendizaje y la innovación a través de la tecnología. Aquí encontrarás las herramientas y el apoyo necesario para potenciar tus habilidades digitales y alcanzar tus metas académicas.
+                    </p>
+                    <p class="text-xl font-semibold text-blue-600">
+                        "La tecnología al servicio del conocimiento."
+                    </p>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-md">
+                    <!-- Puedes reemplazar esta imagen con una foto real de tu aula o un banner -->
+                    <img src="https://placehold.co/600x400/ADD8E6/000000?text=Foto+del+Aula" alt="Foto del aula de cómputo" class="w-full h-auto object-cover">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 2: Misión, Visión y Objetivos -->
+        <section id="mision" class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-700 mb-6 section-title">Misión, Visión y Objetivos</h2>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Misión</h3>
+                    <p class="text-lg leading-relaxed">
+                        Brindar acceso equitativo a herramientas tecnológicas de vanguardia y recursos informáticos, promoviendo el desarrollo de competencias digitales esenciales para el aprendizaje y la investigación en nuestra comunidad educativa.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Visión</h3>
+                    <p class="text-lg leading-relaxed">
+                        Ser un centro de referencia en innovación educativa y tecnológica, reconocido por su contribución al desarrollo integral de los estudiantes y docentes, adaptándose continuamente a los desafíos del mundo digital.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Objetivos Específicos</h3>
+                    <ul class="list-disc list-inside text-lg leading-relaxed space-y-2">
+                        <li>Fomentar el desarrollo de competencias digitales en toda la comunidad educativa.</li>
+                        <li>Apoyar la implementación del currículo escolar a través del uso efectivo de las TIC.</li>
+                        <li>Promover el uso responsable y ético de la tecnología y los recursos informáticos.</li>
+                        <li>Proporcionar un ambiente de aprendizaje tecnológico seguro y actualizado.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 3: Servicios Ofrecidos -->
+        <section id="servicios" class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-700 mb-6 section-title">Servicios Ofrecidos</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-blue-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-3">Acceso a Computadoras e Internet</h3>
+                    <p class="text-gray-700">Disponibilidad de equipos modernos con conexión a internet de alta velocidad para tareas académicas y de investigación.</p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-3">Asistencia Técnica Básica</h3>
+                    <p class="text-gray-700">Soporte para la resolución de problemas técnicos menores con los equipos y el software.</p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-3">Talleres y Clubes de Informática</h3>
+                    <p class="text-gray-700">Programas y actividades extracurriculares para el desarrollo de habilidades específicas en informática y programación.</p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-3">Soporte a Docentes</h3>
+                    <p class="text-gray-700">Asesoramiento y capacitación en el uso de plataformas educativas (Google Classroom), herramientas de presentación y recursos digitales.</p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-3">Préstamo de Equipos o Salas</h3>
+                    <p class="text-gray-700">Posibilidad de solicitar el uso de equipos portátiles o la reserva de salas para proyectos especiales.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 4: Recursos Disponibles -->
+        <section id="recursos" class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-700 mb-6 section-title">Recursos Disponibles</h2>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Equipamiento</h3>
+                    <ul class="list-disc list-inside text-lg leading-relaxed space-y-2">
+                        <li>25 Computadoras de escritorio (PCs)</li>
+                        <li>2 Impresoras multifuncionales</li>
+                        <li>1 Proyector interactivo</li>
+                        <li>Pizarras digitales</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Software Instalado</h3>
+                    <ul class="list-disc list-inside text-lg leading-relaxed space-y-2">
+                        <li>Microsoft Office Suite (Word, Excel, PowerPoint)</li>
+                        <li>Scratch (Programación visual)</li>
+                        <li>GIMP (Edición de imágenes)</li>
+                        <li>Navegadores web (Chrome, Firefox)</li>
+                        <li>Antivirus actualizado</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Conectividad y Red Local</h3>
+                    <p class="text-lg leading-relaxed">
+                        Acceso a internet de fibra óptica con una velocidad de 100 Mbps. Red local cableada e inalámbrica (Wi-Fi) disponible en todo el centro.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Aplicaciones Educativas Recomendadas</h3>
+                    <ul class="list-disc list-inside text-lg leading-relaxed space-y-2">
+                        <li><a href="https://classroom.google.com/" target="_blank" class="text-blue-600 hover:underline">Google Classroom</a></li>
+                        <li><a href="https://www.khanacademy.org/" target="_blank" class="text-blue-600 hover:underline">Khan Academy</a></li>
+                        <li><a href="https://code.org/" target="_blank" class="text-blue-600 hover:underline">Code.org</a></li>
+                        <li><a href="https://www.duolingo.com/" target="_blank" class="text-blue-600 hover:underline">Duolingo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 5: Normas de Uso del Centro de Cómputo -->
+        <section id="normas" class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-700 mb-6 section-title">Normas de Uso del Centro de Cómputo</h2>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Reglamento Interno</h3>
+                    <p class="text-lg leading-relaxed">
+                        Es obligatorio conocer y cumplir el reglamento interno del centro de cómputo para garantizar un ambiente de respeto y buen uso de los recursos.
+                        <a href="#descargas" class="text-blue-600 hover:underline font-medium">Descarga el reglamento aquí.</a>
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Turnos y Horarios de Uso</h3>
+                    <p class="text-lg leading-relaxed">
+                        El uso de los equipos está sujeto a los turnos y horarios establecidos. Consulta el cronograma para más detalles.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Protocolo de Comportamiento y Buen Uso</h3>
+                    <ul class="list-disc list-inside text-lg leading-relaxed space-y-2">
+                        <li>Mantener el orden y la limpieza en todo momento.</li>
+                        <li>No consumir alimentos ni bebidas cerca de los equipos.</li>
+                        <li>Reportar cualquier falla o daño al personal encargado.</li>
+                        <li>Utilizar los equipos únicamente para fines académicos.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Políticas de Seguridad</h3>
+                    <ul class="list-disc list-inside text-lg leading-relaxed space-y-2">
+                        <li>No compartir contraseñas.</li>
+                        <li>Respetar la privacidad de otros usuarios.</li>
+                        <li>Evitar la instalación de software no autorizado.</li>
+                        <li>Usar dispositivos USB con precaución y solo después de escanearlos con antivirus.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 6: Cronograma de Uso -->
+        <section id="cronograma" class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-700 mb-6 section-title">Cronograma de Uso</h2>
+            <div class="space-y-6">
+                <p class="text-lg leading-relaxed">
+                    Consulta el horario semanal o mensual del centro de cómputo. La distribución de turnos se realiza por grados, docentes o para actividades especiales.
+                </p>
+                <div class="bg-blue-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-3">Horario General (Ejemplo)</h3>
+                    <table class="min-w-full bg-white rounded-lg shadow-md overflow-hidden">
+                        <thead>
+                            <tr class="bg-blue-100 text-blue-800">
+                                <th class="py-2 px-4 text-left">Día</th>
+                                <th class="py-2 px-4 text-left">Mañana (8:00 - 12:00)</th>
+                                <th class="py-2 px-4 text-left">Tarde (14:00 - 18:00)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-200">
+                                <td class="py-2 px-4">Lunes</td>
+                                <td class="py-2 px-4">Primaria (4º-6º)</td>
+                                <td class="py-2 px-4">Secundaria (1º-3º)</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 bg-gray-50">
+                                <td class="py-2 px-4">Martes</td>
+                                <td class="py-2 px-4">Secundaria (4º-5º)</td>
+                                <td class="py-2 px-4">Talleres de Programación</td>
+                            </tr>
+                            <tr class="border-b border-gray-200">
+                                <td class="py-2 px-4">Miércoles</td>
+                                <td class="py-2 px-4">Primaria (1º-3º)</td>
+                                <td class="py-2 px-4">Uso Libre / Proyectos</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 bg-gray-50">
+                                <td class="py-2 px-4">Jueves</td>
+                                <td class="py-2 px-4">Capacitación Docente</td>
+                                <td class="py-2 px-4">Secundaria (1º-3º)</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4">Viernes</td>
+                                <td class="py-2 px-4">Uso Libre / Mantenimiento</td>
+                                <td class="py-2 px-4">Club de Robótica</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="mt-4 text-sm text-gray-600">
+                        *Este es un horario de ejemplo. El cronograma detallado se actualiza mensualmente.
+                    </p>
+                </div>
+                <p class="text-lg leading-relaxed">
+                    Si el centro es compartido, existe la opción de reservar un turno. Contacta al responsable para coordinar.
+                </p>
+            </div>
+        </section>
+
+        <!-- Sección 7: Noticias y Actividades -->
+        <section id="noticias" class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-700 mb-6 section-title">Noticias y Actividades</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-blue-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-3">Concurso de Proyectos de Tecnología</h3>
+                    <p class="text-gray-700 mb-2">¡Inscríbete en nuestro concurso anual y muestra tu creatividad! Fecha límite: 30 de julio.</p>
+                    <a href="#" class="text-blue-600 hover:underline text-sm">Leer más</a>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-3">Taller de Introducción a la Programación con Python</h3>
+                    <p class="text-gray-700 mb-2">Dirigido a estudiantes de secundaria. Inicio: 15 de agosto.</p>
+                    <a href="#" class="text-blue-600 hover:underline text-sm">Inscríbete aquí</a>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-3">Participación en Feria de Ciencias Regional</h3>
+                    <p class="text-gray-700 mb-2">Nuestro equipo de robótica clasificó a la siguiente etapa. ¡Felicidades!</p>
+                    <a href="#" class="text-blue-600 hover:underline text-sm">Ver fotos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 8: Galería Multimedia -->
+        <section id="galeria" class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-700 mb-6 section-title">Galería Multimedia</h2>
+            <p class="text-lg leading-relaxed mb-6">Explora momentos de aprendizaje y diversión en nuestro centro de cómputo.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <!-- Puedes reemplazar estas imágenes con fotos reales de tus eventos -->
+                <div class="rounded-lg overflow-hidden shadow-md">
+                    <img src="https://placehold.co/400x300/E0F2F7/000000?text=Taller+de+Robótica" alt="Taller de Robótica" class="w-full h-auto object-cover">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-md">
+                    <img src="https://placehold.co/400x300/E0F2F7/000000?text=Clase+de+Informática" alt="Clase de Informática" class="w-full h-auto object-cover">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-md">
+                    <img src="https://placehold.co/400x300/E0F2F7/000000?text=Evento+Tecnológico" alt="Evento Tecnológico" class="w-full h-auto object-cover">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-md">
+                    <img src="https://placehold.co/400x300/E0F2F7/000000?text=Estudiantes+Investigando" alt="Estudiantes Investigando" class="w-full h-auto object-cover">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-md">
+                    <img src="https://placehold.co/400x300/E0F2F7/000000?text=Club+de+Programación" alt="Club de Programación" class="w-full h-auto object-cover">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-md">
+                    <img src="https://placehold.co/400x300/E0F2F7/000000?text=Conferencia+Tecnológica" alt="Conferencia Tecnológica" class="w-full h-auto object-cover">
+                </div>
+            </div>
+            <p class="mt-6 text-lg leading-relaxed">
+                Próximamente, videos cortos de nuestras actividades y entrevistas a estudiantes.
+            </p>
+        </section>
+
+        <!-- Sección 9: Documentos para Descargar -->
+        <section id="descargas" class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-700 mb-6 section-title">Documentos para Descargar</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-blue-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow flex items-center justify-between">
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-700 mb-2">Reglamento Interno del Centro de Cómputo</h3>
+                        <p class="text-gray-700">Documento oficial con las normas y políticas de uso.</p>
+                    </div>
+                    <a href="https://www.ejemplo.com/reglamento.pdf" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">Descargar PDF</a>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow flex items-center justify-between">
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-700 mb-2">Formulario de Solicitud de Uso de Equipos</h3>
+                        <p class="text-gray-700">Para solicitar el préstamo de equipos o reserva de salas.</p>
+                    </div>
+                    <a href="https://www.ejemplo.com/solicitud.docx" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">Descargar DOCX</a>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow flex items-center justify-between">
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-700 mb-2">Manual Básico de Microsoft Office</h3>
+                        <p class="text-gray-700">Guía rápida para el uso de Word, Excel y PowerPoint.</p>
+                    </div>
+                    <a href="https://www.ejemplo.com/manual_office.pdf" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">Descargar PDF</a>
+                </div>
+            </div>
+            <p class="mt-6 text-sm text-gray-600">
+                *Los enlaces de descarga son ejemplos. Deberás reemplazarlos con los enlaces reales a tus documentos.
+            </p>
+        </section>
+
+        <!-- Sección 10: Contacto -->
+        <section id="contacto" class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-700 mb-6 section-title">Contacto</h2>
+            <div class="space-y-6">
+                <p class="text-lg leading-relaxed">
+                    Si tienes alguna pregunta, sugerencia o necesitas asistencia, no dudes en contactarnos.
+                </p>
+                <div class="bg-blue-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-3">Información de Contacto</h3>
+                    <ul class="list-none space-y-2 text-lg">
+                        <li><span class="font-medium">Responsable:</span> [Nombre del Responsable]</li>
+                        <li><span class="font-medium">Correo Institucional:</span> <a href="mailto:centrocomputo@tuinstitucion.edu.pe" class="text-blue-600 hover:underline">centrocomputo@tuinstitucion.edu.pe</a></li>
+                        <li><span class="font-medium">Número de Contacto:</span> +51 987 654 321</li>
+                        <li><span class="font-medium">Horario de Atención:</span> Lunes a Viernes, 8:00 AM - 1:00 PM y 2:00 PM - 6:00 PM</li>
+                    </ul>
+                </div>
+
+                <div class="bg-blue-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-3">Envíanos un Mensaje</h3>
+                    <!-- Puedes incrustar aquí un formulario de Google Forms para contacto -->
+                    <p class="text-gray-700 mb-4">
+                        Para sugerencias o reportes, puedes utilizar nuestro formulario en línea:
+                    </p>
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc_YOUR_FORM_ID/viewform?embedded=true" width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0" class="rounded-lg shadow-md">Cargando…</iframe>
+                    <p class="mt-4 text-sm text-gray-600">
+                        *Reemplaza "YOUR_FORM_ID" con el ID real de tu formulario de Google Forms.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 11: Elementos Adicionales (Opcional) -->
+        <section id="adicionales" class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-700 mb-6 section-title">Elementos Adicionales (Opcional)</h2>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Enlaces a Plataformas Educativas</h3>
+                    <ul class="list-disc list-inside text-lg leading-relaxed space-y-2">
+                        <li><a href="https://www.aprendencasa.pe/" target="_blank" class="text-blue-600 hover:underline">Aprendo en Casa</a></li>
+                        <li><a href="https://www.coursera.org/" target="_blank" class="text-blue-600 hover:underline">Coursera</a></li>
+                        <li><a href="https://www.edx.org/" target="_blank" class="text-blue-600 hover:underline">edX</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Preguntas Frecuentes (FAQ)</h3>
+                    <p class="text-lg leading-relaxed">
+                        Encuentra respuestas a las preguntas más comunes sobre el uso del centro de cómputo.
+                    </p>
+                    <div class="mt-4 space-y-3">
+                        <details class="bg-blue-50 p-4 rounded-lg shadow-sm cursor-pointer">
+                            <summary class="font-semibold text-blue-700">¿Cuál es el horario de atención del centro?</summary>
+                            <p class="mt-2 text-gray-700">El horario es de Lunes a Viernes, de 8:00 AM a 1:00 PM y de 2:00 PM a 6:00 PM.</p>
+                        </details>
+                        <details class="bg-blue-50 p-4 rounded-lg shadow-sm cursor-pointer">
+                            <summary class="font-semibold text-blue-700">¿Puedo instalar mi propio software?</summary>
+                            <p class="mt-2 text-gray-700">No, la instalación de software no autorizado está prohibida para mantener la seguridad y el rendimiento de los equipos.</p>
+                        </details>
+                        <details class="bg-blue-50 p-4 rounded-lg shadow-sm cursor-pointer">
+                            <summary class="font-semibold text-blue-700">¿Hay Wi-Fi disponible?</summary>
+                            <p class="mt-2 text-gray-700">Sí, el centro cuenta con conexión Wi-Fi para todos los usuarios.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-blue-800 text-white p-6 mt-8 rounded-t-2xl">
+        <div class="container mx-auto text-center text-sm">
+            <p>&copy; 2025 Centro de Cómputo - [Nombre de tu Institución Educativa]. Todos los derechos reservados.</p>
+            <p class="mt-2">Diseñado con propósitos educativos.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
